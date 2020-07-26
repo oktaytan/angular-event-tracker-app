@@ -17,11 +17,10 @@
     <ul class="navbar-nav">
       <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
       <a class="nav-link" routerLink="/register" routerLinkActive="active">Register</a>
-      <a class="nav-link" style="cursor:pointer" *ngIf="_authService.loggedIn()"
-        (click)="_authService.logoutUser()">Logout</a>
+      <a class="nav-link" style="cursor:pointer">Logout</a>
     </ul>
   </div>
 </nav>
-<div class="container">
+<div class="container mt-5">
   <router-outlet></router-outlet>
 </div>
