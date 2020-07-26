@@ -132,18 +132,6 @@ router.get('/special', verifyToken, (req, res) => {
 			description: 'lorem ipsum',
 			date: '2021-04-23T18:25:43.511Z',
 		},
-		{
-			_id: '5',
-			name: 'Auto Expo',
-			description: 'lorem ipsum',
-			date: '2021-04-23T18:25:43.511Z',
-		},
-		{
-			_id: '6',
-			name: 'Auto Expo',
-			description: 'lorem ipsum',
-			date: '2021-04-23T18:25:43.511Z',
-		},
 	];
 	res.status(200).json(events);
 });
