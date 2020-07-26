@@ -10,7 +10,11 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
-  registerUser = (user) => this.http.post<any>(this._registerUrl, user);
-  
-  loginUser = (user) => this.http.post<any>(this._loginUrl, user);
+  registerUser(user) {
+    return this.http.post<any>(this._registerUrl, user);
+  }
+
+  loginUser(user) {
+    return this.http.post<any>(this._loginUrl, user);
+  }
 }
